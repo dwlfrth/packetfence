@@ -7,7 +7,7 @@ testcases:
     vars:
       fingerbank_api_key:
         from: result.systemout
-    
+
 - name: config_fingerbank_api_key
   steps:
   - type: http
@@ -25,7 +25,7 @@ testcases:
         "use_https": "enabled"
       }
     headers:
-      "Content-Type": "application/json"      
+      "Content-Type": "application/json"
     assertions:
       - result.statuscode ShouldEqual 200
       - result.bodyjson.message ShouldEqual "Settings updated"
@@ -39,7 +39,7 @@ testcases:
     url: '{{.pfserver_webadmin_url}}/api/v1/configurator/fingerbank/account_info'
     ignore_verify_ssl: true
     headers:
-      "Content-Type": "application/json"      
+      "Content-Type": "application/json"
     assertions:
       - result.statuscode ShouldEqual 200
       - result.bodyjson.email ShouldEqual "{{.fingerbank_api_key.email}}"
