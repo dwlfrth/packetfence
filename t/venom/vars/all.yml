@@ -671,5 +671,5 @@ firewall_sso.radius.type: FortiGate
 #################################################################################
 html.pfappserver_baseurl: 'https://localhost:1443'
 html.pfappserver_dir: '{{.pfserver_root_dir}}/t/html/pfappserver'
-html.pfappserver_cypress_project_id: '{{.pfappserver_project_id}}'
-html.pfappserver_cypress_record_key: '{{.pfappserver_record_key}}'
+html.pfappserver_cypress_project_id: '{{.cypress_project_id}}'
+html.pfappserver_cypress_record_key: '{{.cypress_record_key}}'

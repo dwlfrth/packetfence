@@ -91,8 +91,8 @@ venom_local_vars:
   - name: 'fingerbank_api_key.email'
     value: "{{ users_vars[dict_name]['vars']['fingerbank_api_key']['email'] }}"
 
-  - name: 'pfappserver_project_id'
+  - name: 'cypress_project_id'
     value: "{{ users_vars[dict_name]['vars']['psono_secrets']['cypress_project_id'] }}"
 
-  - name: 'pfappserver_record_key'
+  - name: 'cypress_record_key'
     value: "{{ users_vars[dict_name]['vars']['psono_secrets']['cypress_record_key'] }}"
