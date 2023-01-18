@@ -602,6 +602,7 @@ pfdeb_based_dev:
           - "haproxy-portal"
           - "haproxy-admin"
           - "proxysql"
+          - "git-sync"
 
 img_dev:
   extends:
@@ -678,6 +679,7 @@ pfdeb_based_br_maint:
           - "haproxy-portal"
           - "haproxy-admin"
           - "proxysql"
+          - "git-sync"
 
 img_br_maint:
   extends:
