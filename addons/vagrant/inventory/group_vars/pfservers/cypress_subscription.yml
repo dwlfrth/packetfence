@@ -1,3 +1,0 @@
----
-cypress_project_id_psono_secret_id: "{{ users_vars[dict_name]['vars']['psono_secrets']['cypress_project_id'] }}"
-cypress_record_key_psono_secret_id: "{{ users_vars[dict_name]['vars']['psono_secrets']['cypress_record_key'] }}"
